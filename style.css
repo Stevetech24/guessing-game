@@ -16,7 +16,7 @@ button:hover {
   margin: 0 auto;
   padding: 20px 0;
 }
-.game-main {
+#game-main {
   background-color: black;
   color: white;
   height: 100vh;
@@ -95,4 +95,50 @@ hr {
 }
 .game-right p:first-child {
   margin-bottom: 32px;
+}
+
+@media (max-width: 1200px) {
+  .game-bottom {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 979px) {
+  html {
+    font-size: 50%;
+  }
+  .game-bottom {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .game-bottom {
+    padding: 0 20px;
+  }
+  .game-left input {
+    width: 50%;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+  header {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  .num-guess-box {
+    margin-bottom: 56px;
+  }
+  .game-left input {
+    width: 100%;
+  }
+  .game-bottom {
+    align-items: center;
+    grid-template-columns: repeat(2, 45%);
+    display: grid;
+  }
 }

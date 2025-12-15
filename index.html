@@ -7,26 +7,26 @@
     <title>GUESS THE NUMBER</title>
   </head>
   <body>
-    <section class="game-main container">
+    <section class="container" id="game-main">
       <header>
         <button id="reset-btn">Again!</button>
         <h1>(Between 1 and 20)</h1>
       </header>
-      <h1 id="header">Guess My Number!</h1>
+      <h1 id="header">Guess My Number</h1>
       <div class="num-guess-box">
         <hr />
         <span id="random-no">?</span>
       </div>
       <div class="game-bottom">
-        <form class="game-left">
+        <div class="game-left">
           <input type="number" id="game-input" /><button id="check-btn">
             Check!
           </button>
-        </form>
+        </div>
         <div class="game-right">
           <p id="feedback">Start guessing...</p>
-          <p>💯Score: <span id="score">?</span></p>
-          <p>🎖️Highscore: <span id="highscore">?</span></p>
+          <p>💯Chances: <span id="score">0</span></p>
+          <p>🎖️Highscore: <span id="highscore">0</span></p>
         </div>
       </div>
     </section>
