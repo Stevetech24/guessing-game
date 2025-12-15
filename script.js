@@ -98,7 +98,7 @@ checkBtn.addEventListener("click", function () {
 
 resetBtn.addEventListener("click", function () {
   gameBody.style.backgroundColor = "black";
-  header.textContent = "Guess My Number!";
+  header.textContent = "Guess My Number";
   secretNo = Math.trunc(Math.random() * 20) + 1;
   randomNo.textContent = "?";
   gameInput.style.border = "4px solid white";
