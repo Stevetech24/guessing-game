@@ -9,10 +9,13 @@
   <body>
     <section class="container" id="game-main">
       <header>
-        <button id="reset-btn">Again!</button>
-        <h1>(Between 1 and 20)</h1>
+        <button id="reset-btn">Again</button>
+        <h1>( Between 1 and 20 )</h1>
       </header>
-      <h1 id="header">Guess My Number</h1>
+      <div>
+        <h1 id="header">Guess My Number</h1>
+        <p class="desc-resp">( Between 1 and 20 )</p>
+      </div>
       <div class="num-guess-box">
         <hr />
         <span id="random-no">?</span>
@@ -25,8 +28,10 @@
         </div>
         <div class="game-right">
           <p id="feedback">Start guessing...</p>
-          <p>💯Chances: <span id="score">0</span></p>
-          <p>🎖️Highscore: <span id="highscore">0</span></p>
+          <div>
+            <p>💯Chances: <span id="score">0</span></p>
+            <p>🎖️Highscore: <span id="highscore">0</span></p>
+          </div>
         </div>
       </div>
     </section>
