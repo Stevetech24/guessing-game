@@ -61,9 +61,11 @@ hr {
   z-index: 1;
 }
 .game-bottom {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: space-between;
   align-items: start;
-  gap: 160px;
+  /* gap: 160px; */
   padding: 0 48px;
   font-weight: bold;
 }
@@ -74,8 +76,8 @@ hr {
   gap: 32px;
 }
 .game-left input {
-  font-size: 5.6rem;
-  width: 30%;
+  font-size: 5rem;
+  width: 50%;
   padding: 10px;
   text-align: center;
   background-color: transparent;
@@ -121,7 +123,7 @@ hr {
     font-size: 4rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   html {
     font-size: 40%;
   }
@@ -130,15 +132,22 @@ hr {
     align-items: center;
     padding: 5px 10px;
   }
+  #header {
+    font-size: 6rem;
+  }
   .num-guess-box {
-    margin-bottom: 56px;
+    margin-bottom: 100px;
   }
   .game-left input {
     width: 100%;
   }
   .game-bottom {
     align-items: center;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
     display: grid;
+  }
+  .game-right P:nth-child(2) {
+    margin-bottom: 20px;
   }
 }
